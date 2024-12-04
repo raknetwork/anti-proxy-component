@@ -37,20 +37,26 @@ Move all unziped .so files in /usr/lib/i386-linux-gnu/
 
 
 ## Optional
-#### If you want to build your openssl so files in a manual way, follow these small steps:# wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
+#### If you want to build your openssl so files from their trusted websites in a manual way, follow these small steps:
+Add 32bit linux arhitecture
 - `sudo dpkg --add-architecture i386`
+ This command refreshes the package index on a Ubuntu/Debian-based linux system, fetching the latest information about available packages and their versions from configured repositories.
 - `sudo apt update`
+Install build tools like compiler, build tool, etc ...
 - `sudo apt install wget git build-essential g++-multilib libssl-dev:i386 libfmt-dev:i386`
 
-For 32bit compilation.
+Set enviroment to 32bit compilation.
 - `setarch i386`
 - `/bin/bash`
 Download openssl-1.1.0.
 - `wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz`
+Unzip openssl-1.1.1o.tar.gz file
 - `tar -xvf openssl-1.1.1o.tar.gz`
 - `cd openssl-1.1.1o`
 - `./config`
+Compile the so file.
 - `make`
+Move compiled .so files to /usr/lib/i386-linux-gnu
 - `sudo cp libcypto.so.1.1 /usr/lib/i386-linux-gnu/`
 - `sudo cp libssl.so.1.1 /usr/lib/i386-linux-gnu/`
 

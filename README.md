@@ -36,4 +36,25 @@ Move all unziped .so files in /usr/lib/i386-linux-gnu/
 - `"key": "Asf019sl5tA51c01lsa..."`
 
 
+## Optional
+#### If you want to build your openssl so files in a manual way, follow these small steps:# wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
+- `sudo dpkg --add-architecture i386`
+- `sudo apt update`
+- `sudo apt install wget git build-essential g++-multilib libssl-dev:i386 libfmt-dev:i386`
+
+For 32bit compilation.
+- `setarch i386`
+- `/bin/bash`
+Download openssl-1.1.0.
+- `wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz`
+- `tar -xvf openssl-1.1.1o.tar.gz`
+- `cd openssl-1.1.1o`
+- `./config`
+- `make`
+- `sudo cp libcypto.so.1.1 /usr/lib/i386-linux-gnu/`
+- `sudo cp libssl.so.1.1 /usr/lib/i386-linux-gnu/`
+
+
+
+
 

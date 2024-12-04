@@ -48,14 +48,18 @@ Install build tools like compiler, build tool, etc ...
 Set enviroment to 32bit compilation.
 - `setarch i386`
 - `/bin/bash`
+
 Download openssl-1.1.0.
 - `wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz`
+
 Unzip openssl-1.1.1o.tar.gz file
 - `tar -xvf openssl-1.1.1o.tar.gz`
 - `cd openssl-1.1.1o`
 - `./config`
+
 Compile the so file.
 - `make`
+
 Move compiled .so files to /usr/lib/i386-linux-gnu
 - `sudo cp libcypto.so.1.1 /usr/lib/i386-linux-gnu/`
 - `sudo cp libssl.so.1.1 /usr/lib/i386-linux-gnu/`

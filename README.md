@@ -27,7 +27,7 @@ Move all unziped .so files in /usr/lib/i386-linux-gnu/
 - `sudo mv openssl-3.0.15/libcrypto.so.3 /usr/lib/i386-linux-gnu/`
 - `sudo mv openssl-3.0.15/libssl.so.3 /usr/lib/i386-linux-gnu/`
 
-#### Unzip anti-proxy-component.zip, move anti-proxy-config.json, whitelisted_ip_pool.json in anti-proxy-component.so in open-mp-server/components/
+#### Unzip anti-proxy-component.zip and move anti-proxy-config.json, whitelisted_ip_pool.json in anti-proxy-component.so in open-mp-server/components/
 
 - `unzip anti-proxy-component.zip`
 - `mv anti-proxy-config.json whitelisted_ip_pool.json anti-proxy-component.so open-mp-server/components`

@@ -40,8 +40,10 @@ Move all unziped .so files in /usr/lib/i386-linux-gnu/
 #### If you want to build your openssl so files from their trusted websites in a manual way, follow these small steps:
 Add 32bit linux arhitecture
 - `sudo dpkg --add-architecture i386`
- This command refreshes the package index on a Ubuntu/Debian-based linux system, fetching the latest information about available packages and their versions from configured repositories.
+
+This command refreshes the package index on a Ubuntu/Debian-based linux system, fetching the latest information about available packages and their versions from configured repositories.
 - `sudo apt update`
+
 Install build tools like compiler, build tool, etc ...
 - `sudo apt install wget git build-essential g++-multilib libssl-dev:i386 libfmt-dev:i386`
 
